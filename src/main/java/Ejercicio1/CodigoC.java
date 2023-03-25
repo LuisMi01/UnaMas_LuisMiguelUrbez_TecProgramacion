@@ -5,6 +5,7 @@ public class CodigoC {
         double PREC = 1e-6;
 
         public double bisect(double min, double max){
+
             double med = (min+max)/2;
             if (max-min<PREC){
                 System.out.println(med);
