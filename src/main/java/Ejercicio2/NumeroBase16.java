@@ -10,27 +10,18 @@ public class NumeroBase16 {
         int resto;
         String resultado = "";
 
+        int[] arrayResto = {0,1, 2, 3, 4, 5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15};
+        String[] arrayDigito = {"0","1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"};
+
         while (numero > 0) {
             resto = numero % 16;
+            for (int i = 0; i < arrayResto.length; i++) {
+                if (resto == arrayResto[i]) {
+                    resultado = arrayDigito[i] + resultado;
+                }
+            }
             numero = numero / 16;
-
-            if (resto == 10) {
-                resultado = "A" + resultado;
-            } else if (resto == 11) {
-                resultado = "B" + resultado;
-            } else if (resto == 12) {
-                resultado = "C" + resultado;
-            } else if (resto == 13) {
-                resultado = "D" + resultado;
-            } else if (resto == 14) {
-                resultado = "E" + resultado;
-            } else if (resto == 15) {
-                resultado = "F" + resultado;
             }
-            else {
-                resultado = resto + resultado;
-                System.out.println("Su numero en bse 16 es " + resultado);
-            }
-        }
+        System.out.println("El resultado es: " + resultado);
     }
 }
