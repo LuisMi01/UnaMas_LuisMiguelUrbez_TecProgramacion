@@ -25,3 +25,13 @@
 a) Dado un número cualquiera x, ¿qué nos muestra por pantalla la llamada a la función recursiva f(x,2)? ¿Cuál sería un nombre más adecuado para la función f?<br>
 -El algoritmo muestra una forma de comprobar si el resto del numero es 0, y si es asi, decrementara el numero hasta que no sea posible realizar la funcion adecuadamente. (Sucede cuando el numero dado por parametro es menor que 1).<br>
 <br>b) Implemente un algoritmo iterativo y uno implementado mediante expresiones lambda equivalentes.
+
+### Ejercicio 5: <br>
+
+<br>Implemente, tanto de forma recursiva como de forma iterativa y con expresiones lambda, una función que nos devuelva el máximo común divisor de dos números enteros utilizando el algoritmo de Euclides.<br>
+<br>__ALGORITMO DE EUCLIDES__<br>
+<br>Dados dos números enteros positivos m y n, tal que m > n, para encontrar su máximo común divisor
+(es decir, el mayor entero positivo que divide a ambos):<br>
+<br>- Dividir m por n para obtener el resto r (0 ≤ r < n)<br>
+- Si r = 0, el MCD es n.<br>
+- Si no, el máximo común divisor es MCD(n,r).<br>
