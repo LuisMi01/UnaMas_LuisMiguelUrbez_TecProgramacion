@@ -4,34 +4,39 @@ import java.util.Scanner;
 
 public class Euclides {
     Scanner teclado = new Scanner(System.in);
-    int a, b, r;
+    int m, n, r;
     public void algoritmo1(){
         System.out.println("FORMA RECURSIVA");
         System.out.println("Ingrese el primer numero:");
-        a = teclado.nextInt();
+        m = teclado.nextInt();
         System.out.println("Ingrese el segundo numero:");
-        b = teclado.nextInt();
-        while(b != 0){
-            r = a%b;
-            a = b;
-            b = r;
+        n = teclado.nextInt();
+        r = m%n;
+
+        if(r == 0){
+            System.out.println("El MCD es: " + n);
+        }else{
+            m = n;
+            n = r;
+            algoritmo1();
         }
-        System.out.println("El minimo comun multiplo es: " + a);
 
     }
+
     public void algoritmo2(){
-        System.out.println("FORMA ITERATIVA CON EXPRESIONES LAMBDA");
+        System.out.println("FORMA ITERATIVA");
         System.out.println("Ingrese el primer numero:");
-        a = teclado.nextInt();
+        m = teclado.nextInt();
         System.out.println("Ingrese el segundo numero:");
-        b = teclado.nextInt();
-
-        while(b != 0){
-            r = a%b;
-            a = b;
-            b = r;
+        n = teclado.nextInt();
+        r = m%n;
+        while(r != 0){
+            m = n;
+            n = r;
+            r = m%n;
         }
-        System.out.println("El minimo comun multiplo es: " + a);
+        System.out.println("El MCD es: " + n);
     }
+
 
 }
