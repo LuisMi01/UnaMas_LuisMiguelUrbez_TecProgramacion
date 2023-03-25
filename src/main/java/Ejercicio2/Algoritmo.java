@@ -1,4 +1,4 @@
-package Ejericio2;
+package Ejercicio2;
 
 public class Algoritmo {
     public void f(int num /*100*/, int div/*2*/){
