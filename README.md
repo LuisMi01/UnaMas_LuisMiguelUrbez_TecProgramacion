@@ -10,3 +10,18 @@
   <br>-La funcion bisect(0,N) esta calculando en un principio la media de los dos numero que le damos por parametro. En caso de cambiar el valor de N, nos estariamos dirigiendo directamente a la funcion f(x), cambiando el resultado de su operacion principal, haciendo mas grande o pequeña. En caso de cambiar la funcion f(x), los casos en la funcion bisect(0, N) se verian alterados (los resultados), ya que estariamos cambiando los parametros que usan para funcionar, llegando al caso de que no funconesn correctamente por un mal uso de estos parametros o al crear otr funcion.<br>  
   b) Implemente un algoritmo iterativo equivalente.<br>
   
+### Ejercicio 2:
+
+<br>__Dado el siguiente algoritmo recursivo:__<br>
+  <br>void f(int num, int div){<br>
+    if (num>1) {<br>
+    if ((num%div) == 0) { <br>
+    System.out.println(div); <br>
+    f(num/div,div);<br>
+  } else {<br>
+    f(num,div+1); }<br>
+   } }<br>
+   
+a) Dado un número cualquiera x, ¿qué nos muestra por pantalla la llamada a la función recursiva f(x,2)? ¿Cuál sería un nombre más adecuado para la función f?<br>
+-El algoritmo muestra una forma de comprobar si el resto del numero es 0, y si es asi, decrementara el numero hasta que no sea posible realizar la funcion adecuadamente. (Sucede cuando el numero dado por parametro es menor que 1).<br>
+<br>b) Implemente un algoritmo iterativo y uno implementado mediante expresiones lambda equivalentes.
