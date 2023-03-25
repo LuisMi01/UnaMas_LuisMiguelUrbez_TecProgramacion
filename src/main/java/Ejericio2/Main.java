@@ -7,4 +7,5 @@ public class Main {
         a.fIterativo(100,2);
         a.fLambda(100,2);
     }
+
 }
