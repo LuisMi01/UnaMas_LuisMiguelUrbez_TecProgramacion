@@ -23,5 +23,5 @@
    } }<br>
    
 a) Dado un número cualquiera x, ¿qué nos muestra por pantalla la llamada a la función recursiva f(x,2)? ¿Cuál sería un nombre más adecuado para la función f?<br>
--El algoritmo muestra una forma de comprobar si el resto del numero es 0, y si es asi, decrementara el numero hasta que no sea posible realizar la funcion adecuadamente.<br>
+-El algoritmo muestra una forma de comprobar si el resto del numero es 0, y si es asi, decrementara el numero hasta que no sea posible realizar la funcion adecuadamente. (Sucede cuando el numero dado por parametro es menor que 1).<br>
 <br>b) Implemente un algoritmo iterativo y uno implementado mediante expresiones lambda equivalentes.
